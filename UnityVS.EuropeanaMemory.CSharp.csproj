@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3EBE1421-02AB-78E0-10BC-D9E4BACDF688}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace></RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_4_5_4;UNITY_4_5;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_4_5_4;UNITY_4_5;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Semantika.Memory.Unity">
+      <HintPath>Assets\Plugins\Semantika.Memory.Unity.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\GameEngine\Data\CardData.cs" />
+    <Compile Include="Assets\GameEngine\Data\DeckData.cs" />
+    <Compile Include="Assets\GameEngine\Data\GameRules.cs" />
+    <Compile Include="Assets\GameEngine\Data\MemoryGameState.cs" />
+    <Compile Include="Assets\GameEngine\Data\QuestionData.cs" />
+    <Compile Include="Assets\GameEngine\MemoryGame.cs" />
+    <Compile Include="Assets\GameEngine\ObservableObject.cs" />
+    <Compile Include="Assets\GameEngine\Providers\CardFactory.cs" />
+    <Compile Include="Assets\GameEngine\Providers\CryptoProvider.cs" />
+    <Compile Include="Assets\GameEngine\Providers\DailyMemoryScoreCalculation.cs" />
+    <Compile Include="Assets\GameEngine\Providers\DeckLayoutProvider.cs" />
+    <Compile Include="Assets\GameEngine\Providers\HighscoreProvider.cs" />
+    <Compile Include="Assets\GameEngine\Providers\IHighscoreProvider.cs" />
+    <Compile Include="Assets\GameEngine\Providers\IScoreCalculation.cs" />
+    <Compile Include="Assets\GameEngine\Providers\MiscFactory.cs" />
+    <Compile Include="Assets\GameEngine\Utils\AnimationUtils.cs" />
+    <Compile Include="Assets\GameEngine\Utils\AzureMuseumImageFormatter.cs" />
+    <Compile Include="Assets\GameEngine\Utils\MathHelper.cs" />
+    <Compile Include="Assets\GameEngine\Utils\MusicUtils.cs" />
+    <Compile Include="Assets\Scripts\BackButton.cs" />
+    <Compile Include="Assets\Scripts\Controls\BaseControl.cs" />
+    <Compile Include="Assets\Scripts\Controls\GroupControl.cs" />
+    <Compile Include="Assets\Scripts\Controls\IUnityControl.cs" />
+    <Compile Include="Assets\Scripts\Controls\ImageView.cs" />
+    <Compile Include="Assets\Scripts\Controls\ImageViewWithFrame.cs" />
+    <Compile Include="Assets\Scripts\Controls\ItemsControl.cs" />
+    <Compile Include="Assets\Scripts\Controls\TextView.cs" />
+    <Compile Include="Assets\Scripts\CreateSet\CancelButton.cs" />
+    <Compile Include="Assets\Scripts\CreateSet\CreateSetForm.cs" />
+    <Compile Include="Assets\Scripts\CreateSet\SaveButton.cs" />
+    <Compile Include="Assets\Scripts\CreateSet\SearchButton.cs" />
+    <Compile Include="Assets\Scripts\CreateSet\StartSaveButton.cs" />
+    <Compile Include="Assets\Scripts\CreateSet\TitleLabel.cs" />
+    <Compile Include="Assets\Scripts\Game\CalculateLayout.cs" />
+    <Compile Include="Assets\Scripts\Game\CardLogic.cs" />
+    <Compile Include="Assets\Scripts\Game\GameLogic.cs" />
+    <Compile Include="Assets\Scripts\Game\GameOverScorePopup.cs" />
+    <Compile Include="Assets\Scripts\Game\RestartGameScript.cs" />
+    <Compile Include="Assets\Scripts\Home\AboutScript.cs" />
+    <Compile Include="Assets\Scripts\Home\CloseButton.cs" />
+    <Compile Include="Assets\Scripts\Home\HelpPopupScript.cs" />
+    <Compile Include="Assets\Scripts\Home\MenuButtonScript.cs" />
+    <Compile Include="Assets\Scripts\Initialize.cs" />
+    <Compile Include="Assets\Scripts\Popups\OkPopups.cs" />
+    <Compile Include="Assets\Scripts\Popups\QuestionLayout.cs" />
+    <Compile Include="Assets\Scripts\Popups\ScoreAnimation.cs" />
+    <Compile Include="Assets\Scripts\SelectDeck\DifficultyButton.cs" />
+    <Compile Include="Assets\Scripts\SelectDeck\NextButton.cs" />
+    <Compile Include="Assets\Scripts\SelectDeck\PlayButton.cs" />
+    <Compile Include="Assets\Scripts\SelectDeck\SelectDifficulty.cs" />
+    <Compile Include="Assets\Scripts\SelectDeck\ShowDecks.cs" />
+    <Compile Include="Assets\Scripts\SelectDeck\backup.cs" />
+    <Compile Include="Assets\Scripts\SelectMultiplayer\PlayersButton.cs" />
+    <Compile Include="Assets\Scripts\SelectMultiplayer\SelectPlayers.cs" />
+    <Compile Include="Assets\Scripts\SplashScreen.cs" />
+    <Compile Include="Assets\Scripts\Utils\DataMessenger.cs" />
+    <Compile Include="Assets\Scripts\Utils\FontColorUtils.cs" />
+    <Compile Include="Assets\Scripts\Utils\GetStuffFromEuropeana.cs" />
+    <Compile Include="Assets\Scripts\Utils\TextFormatting.cs" />
+    <Compile Include="Assets\Scripts\Utils\TitleSafeAreaDisplay.cs" />
+    <Compile Include="Assets\Scripts\Utils\WebCache.cs" />
+    <Compile Include="Assets\Scripts\Utils\WorldToRect.cs" />
+    <Compile Include="Assets\WebServices\Future.cs" />
+    <Compile Include="Assets\WebServices\MyEuropeanaClient.cs" />
+    <Compile Include="Assets\WebServices\Test.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
+</Project>
